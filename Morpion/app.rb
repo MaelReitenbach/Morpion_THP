@@ -36,10 +36,12 @@ compteur_match_nul = 0
 
 9.times do
 alors = board.traitement(parti.demande(j1, j2), parti.tour)
-if parti.tour%2 == 0
+actuel = parti.tour + 1
+if actuel%2 == 0
 	donc = j2.verification(alors)
 	    if donc == "win"
 	    	board.graph
+	    	puts ""
 			puts "#{j2.name} a gagne !"
 			break
 	    end	  
@@ -47,6 +49,7 @@ else
 	donc = j1.verification(alors)
 		if donc == "win"
 			board.graph
+			puts ""
 	  		puts "#{j1.name} a gagne !"
 	  		break
 	  	end	

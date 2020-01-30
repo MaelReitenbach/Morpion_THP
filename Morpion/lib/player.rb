@@ -36,7 +36,7 @@ class Player
 		elsif result == 3
 			@hohau = @hohau + 1
 			@verdroi = @verdroi + 1
-			@dimon = @dimon
+			@dimon = @dimon + 1
 		elsif result == 4 
 			@homi = @homi + 1
 			@vergau = @vergau + 1
